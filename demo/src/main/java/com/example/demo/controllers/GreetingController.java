@@ -3,7 +3,6 @@ package com.example.demo.controllers;
 import java.util.concurrent.atomic.AtomicLong;
 
 import com.example.demo.models.Greeting;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,10 +13,5 @@ public class GreetingController {
     @GetMapping("/greeting")
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
-    }
-
-    @GetMapping("/hello")
-    public void hello() {
-        System.out.println("");
     }
 }
