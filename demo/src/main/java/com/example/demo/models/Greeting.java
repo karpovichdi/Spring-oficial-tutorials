@@ -1,4 +1,4 @@
-package com.karpovichdi.training.models;
+package com.example.demo.models;
 
 public class Greeting {
     private long id;

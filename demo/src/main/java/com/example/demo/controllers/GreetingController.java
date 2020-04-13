@@ -1,8 +1,8 @@
-package com.karpovichdi.training.controllers;
+package com.example.demo.controllers;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import com.karpovichdi.training.models.Greeting;
+import com.example.demo.models.Greeting;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
